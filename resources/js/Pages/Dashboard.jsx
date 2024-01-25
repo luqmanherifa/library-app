@@ -1,13 +1,12 @@
+import DashboardButton from "@/Components/DashboardButton";
+import DataBorrow from "@/Layouts/Borrow/DataBorrow";
 import Home from "@/Layouts/Home";
-import Book from "@/Layouts/Book";
 import { Head, Link } from "@inertiajs/react";
 import React, { useState } from "react";
 import logoImage from "../../../public/library.png";
-import DashboardButton from "@/Components/DashboardButton";
 
 export default function Dashboard({ auth }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
     const [activeComponent, setActiveComponent] = useState("Home");
     const [activeButton, setActiveButton] = useState("Home");
 
@@ -24,8 +23,8 @@ export default function Dashboard({ auth }) {
         switch (activeComponent) {
             case "Home":
                 return <Home auth={auth} />;
-            case "Book":
-                return <Book />;
+            case "Borrow":
+                return <DataBorrow />;
             default:
                 return null;
         }
@@ -41,7 +40,7 @@ export default function Dashboard({ auth }) {
                         <div className="flex w-40 items-center ml-5">
                             <a href="/" className="flex items-center gap-3">
                                 <img src={logoImage} alt="" className="w-8" />
-                                <p className="font-bricolage text-xl font-extrabold text-red-600 hover:text-red-700">
+                                <p className="font-bricolage text-xl font-bold text-amber-700 hover:text-amber-600">
                                     Library
                                 </p>
                             </a>
@@ -53,7 +52,7 @@ export default function Dashboard({ auth }) {
                                     <div className="mt-3 flex justify-end">
                                         <button
                                             id="dropdownInformationButton"
-                                            Book-dropdown-toggle="dropdownInformation"
+                                            data-dropdown-toggle="dropdownInformation"
                                             className="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2.5 text-center text-sm font-medium text-slate-50 hover:bg-blue-800"
                                             type="button"
                                             onClick={toggleDropdown}
@@ -140,9 +139,9 @@ export default function Dashboard({ auth }) {
                         <DashboardButton
                             activeButton={activeButton}
                             handleComponentChange={handleComponentChange}
-                            buttonText="Book"
+                            buttonText="Borrow"
                             svg="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
-                            text="Book"
+                            text="Borrow"
                         />
                     </ul>
                 </div>

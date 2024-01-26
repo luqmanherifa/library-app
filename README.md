@@ -30,7 +30,7 @@
   - Figma
 
 ### Live
-  - [YouTube](https://www.youtube.com/@luqmanherifa)
+  - [YouTube](https://youtu.be/fEXozEhOGZk)
 
 ### How to run
   - Install node_modules

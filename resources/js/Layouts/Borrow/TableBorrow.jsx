@@ -17,9 +17,9 @@ const TableBorrow = ({
     handleDeleteSubmit,
 }) => {
     return (
-        <div className="custom-scrollbar relative overflow-x-auto rounded-lg border border-slate-300">
-            <table className="w-full table-fixed text-left text-sm text-slate-500">
-                <thead className="border-b border-slate-300 bg-white text-xs uppercase text-slate-600">
+        <div className="custom-scrollbar relative overflow-x-auto rounded-lg border border-gray-300">
+            <table className="w-full table-fixed text-left text-sm text-gray-500">
+                <thead className="border-b border-gray-300 bg-white text-xs uppercase text-gray-600">
                     <tr>
                         <TableHeaderData text="No" width="w-14 lg:w-10" />
                         <TableHeaderData text="ID" width="w-14 lg:w-10" />
@@ -41,7 +41,7 @@ const TableBorrow = ({
                         borrow.map((item, index) => (
                             <tr
                                 key={item.id}
-                                className="border-b bg-white hover:bg-slate-50"
+                                className="border-b bg-white hover:bg-gray-50"
                             >
                                 <TableDataNumber
                                     startNumber={startNumber}

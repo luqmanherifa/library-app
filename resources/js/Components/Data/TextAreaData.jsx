@@ -6,7 +6,7 @@ const TextAreaData = ({
     name,
     value,
     onChange,
-    css = "bg-slate-50",
+    css = "bg-gray-50",
     placeholder,
     required = true,
     autoFocus,
@@ -20,7 +20,7 @@ const TextAreaData = ({
             value={value}
             onChange={onChange}
             placeholder={placeholder}
-            className={`block w-full rounded-lg border border-slate-300 p-2.5 text-sm text-slate-900 placeholder-slate-400 focus:bg-slate-50 ${css}`}
+            className={`block w-full rounded-lg border border-gray-300 p-2.5 text-sm text-gray-900 placeholder-gray-400 focus:bg-gray-50 ${css}`}
             required={required}
             autoFocus={autoFocus}
             disabled={disabled}

@@ -13,7 +13,7 @@ const UpdateBorrow = ({
 }) => {
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center px-5 py-5 lg:py-10">
-            <div className="modal-bg absolute inset-0 bg-slate-500 opacity-50"></div>
+            <div className="modal-bg absolute inset-0 bg-gray-500 opacity-50"></div>
             <div className="modal custom-scrollbar relative max-h-full overflow-x-auto overflow-y-auto rounded-xl bg-white lg:overflow-x-hidden">
                 <div className="relative max-h-full w-80 lg:w-[36rem]">
                     <div className="relative bg-white">
@@ -39,7 +39,7 @@ const UpdateBorrow = ({
                                             onChange={handleFormInputChange}
                                             placeholder="Hanni Pham"
                                             disabled={true}
-                                            css="bg-slate-200"
+                                            css="bg-gray-200"
                                         />
                                     </div>
                                     <div className="mb-5">
@@ -110,25 +110,25 @@ const UpdateBorrow = ({
                                             onChange={(e) => {
                                                 handleFormInputChange(e);
                                             }}
-                                            className="block w-full rounded-lg border border-slate-300 bg-slate-50 p-2.5 text-sm text-slate-900 placeholder-slate-400 focus:bg-slate-50"
+                                            className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 placeholder-gray-400 focus:bg-gray-50"
                                             required
                                         >
                                             <option
                                                 value=""
-                                                className="text-slate-900"
+                                                className="text-gray-900"
                                                 disabled
                                             >
                                                 Select Status
                                             </option>
                                             <option
                                                 value="Borrowing"
-                                                className="text-slate-900"
+                                                className="text-gray-900"
                                             >
                                                 Borrowing
                                             </option>
                                             <option
                                                 value="Returned"
-                                                className="text-slate-900"
+                                                className="text-gray-900"
                                             >
                                                 Returned
                                             </option>

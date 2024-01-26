@@ -35,8 +35,8 @@ export default function Dashboard({ auth }) {
             <Head title="Dashboard" />
 
             <div className="fixed top-0 z-50 w-full bg-white">
-                <div className="border-b border-slate-300">
-                    <div className="mx-auto flex h-16 justify-between text-slate-50 max-w-none">
+                <div className="border-b border-gray-300">
+                    <div className="mx-auto flex h-16 justify-between text-gray-50 max-w-none">
                         <div className="flex w-40 items-center ml-5">
                             <a href="/" className="flex items-center gap-3">
                                 <img src={logoImage} alt="" className="w-8" />
@@ -53,7 +53,7 @@ export default function Dashboard({ auth }) {
                                         <button
                                             id="dropdownInformationButton"
                                             data-dropdown-toggle="dropdownInformation"
-                                            className="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2.5 text-center text-sm font-medium text-slate-50 hover:bg-blue-800"
+                                            className="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2.5 text-center text-sm font-medium text-gray-50 hover:bg-blue-800"
                                             type="button"
                                             onClick={toggleDropdown}
                                         >
@@ -81,9 +81,9 @@ export default function Dashboard({ auth }) {
                                     {isDropdownOpen && (
                                         <div
                                             id="dropdownInformation"
-                                            className="relative z-10 mt-2 w-44 divide-y divide-slate-100 rounded-lg border border-slate-300 bg-white"
+                                            className="relative z-10 mt-2 w-44 divide-y divide-gray-100 rounded-lg border border-gray-300 bg-white"
                                         >
-                                            <div className="px-4 py-3 text-sm text-slate-900">
+                                            <div className="px-4 py-3 text-sm text-gray-900">
                                                 <div className="flex gap-2">
                                                     <span className="line-clamp-1 font-semibold">
                                                         {auth.user.name}
@@ -91,13 +91,13 @@ export default function Dashboard({ auth }) {
                                                 </div>
                                             </div>
                                             <ul
-                                                className="py-1 text-sm text-slate-700"
+                                                className="py-1 text-sm text-gray-700"
                                                 aria-labelledby="dropdownInformationButton"
                                             >
                                                 <li>
                                                     <a
                                                         href="/"
-                                                        className="block px-4 py-2 hover:bg-slate-100"
+                                                        className="block px-4 py-2 hover:bg-gray-100"
                                                     >
                                                         Home
                                                     </a>
@@ -108,7 +108,7 @@ export default function Dashboard({ auth }) {
                                                     method="post"
                                                     href={route("logout")}
                                                     as="button"
-                                                    className="block w-full px-4 py-2 text-left text-sm text-slate-700 hover:bg-slate-100"
+                                                    className="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100"
                                                 >
                                                     Logout
                                                 </Link>
@@ -124,10 +124,10 @@ export default function Dashboard({ auth }) {
 
             <aside
                 id="logo-sidebar"
-                className="fixed left-0 top-0 z-40 h-screen w-56 -translate-x-full border-r border-slate-300 pt-[4rem] transition-transform sm:translate-x-0 block"
+                className="fixed left-0 top-0 z-40 h-screen w-56 -translate-x-full border-r border-gray-300 pt-[4rem] transition-transform sm:translate-x-0 block"
                 aria-label="Sidebar"
             >
-                <div className="custom-scrollbar h-full overflow-y-hidden bg-slate-50 px-5 pb-20 hover:overflow-y-auto">
+                <div className="custom-scrollbar h-full overflow-y-hidden bg-gray-50 px-5 pb-20 hover:overflow-y-auto">
                     <ul className="mt-6 space-y-0.5 font-medium">
                         <DashboardButton
                             activeButton={activeButton}

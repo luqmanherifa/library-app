@@ -2,7 +2,7 @@ import React from "react";
 
 const TableHeaderData = ({
     text,
-    border = "border-r border-slate-300",
+    border = "border-r border-gray-300",
     width = "w-20 lg:w-12",
 }) => {
     return (

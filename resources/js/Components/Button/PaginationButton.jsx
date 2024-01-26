@@ -14,9 +14,9 @@ const PaginationButton = ({
     return (
         <div className="mt-5 flex justify-center">
             <button
-                className={`flex h-8 items-center justify-center rounded-lg px-3 text-sm font-medium text-slate-50 ${
+                className={`flex h-8 items-center justify-center rounded-lg px-3 text-sm font-medium text-gray-50 ${
                     isFirstPage
-                        ? "bg-slate-400"
+                        ? "bg-gray-400"
                         : "bg-blue-600 hover:bg-blue-700"
                 }`}
                 onClick={handleFirstPage}
@@ -32,9 +32,9 @@ const PaginationButton = ({
                 </svg>
             </button>
             <button
-                className={`ml-1 flex h-8 items-center justify-center rounded-lg px-3 text-sm font-medium text-slate-50 ${
+                className={`ml-1 flex h-8 items-center justify-center rounded-lg px-3 text-sm font-medium text-gray-50 ${
                     currentPage === 1
-                        ? "bg-slate-400"
+                        ? "bg-gray-400"
                         : "bg-blue-600 hover:bg-blue-700"
                 }`}
                 onClick={handlePrevPage}
@@ -49,16 +49,16 @@ const PaginationButton = ({
                     <path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
                 </svg>
             </button>
-            <span className="mx-2 flex h-8 items-center justify-center rounded-lg bg-slate-600 px-3 text-sm font-medium text-slate-50 lg:hidden">
+            <span className="mx-2 flex h-8 items-center justify-center rounded-lg bg-gray-600 px-3 text-sm font-medium text-gray-50 lg:hidden">
                 Page {currentPage} of {lastPage}
             </span>
-            <span className="mx-2 hidden h-8 w-40 items-center justify-center rounded-lg bg-slate-600 px-3 text-sm font-medium text-slate-50 lg:flex">
+            <span className="mx-2 hidden h-8 w-40 items-center justify-center rounded-lg bg-gray-600 px-3 text-sm font-medium text-gray-50 lg:flex">
                 Page {currentPage} of {lastPage}
             </span>
             <button
-                className={`mr-1 flex h-8 items-center justify-center rounded-lg px-3 text-sm font-medium text-slate-50 ${
+                className={`mr-1 flex h-8 items-center justify-center rounded-lg px-3 text-sm font-medium text-gray-50 ${
                     currentPage === lastPage
-                        ? "bg-slate-400"
+                        ? "bg-gray-400"
                         : "bg-blue-600 hover:bg-blue-700"
                 }`}
                 onClick={() => handleNextPage(searchQuery)}
@@ -74,10 +74,8 @@ const PaginationButton = ({
                 </svg>
             </button>
             <button
-                className={`flex h-8 items-center justify-center rounded-lg px-3 text-sm font-medium text-slate-50 ${
-                    isLastPage
-                        ? "bg-slate-400"
-                        : "bg-blue-600 hover:bg-blue-700"
+                className={`flex h-8 items-center justify-center rounded-lg px-3 text-sm font-medium text-gray-50 ${
+                    isLastPage ? "bg-gray-400" : "bg-blue-600 hover:bg-blue-700"
                 }`}
                 onClick={handleLastPage}
                 disabled={isLastPage}

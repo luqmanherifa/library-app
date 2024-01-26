@@ -11,18 +11,18 @@ const DashboardButton = ({
         <li>
             <button
                 type="button"
-                className={`group flex w-full items-center rounded-lg border px-3 py-2 text-slate-500 hover:border hover:border-slate-300 hover:bg-white hover:text-slate-700 ${
+                className={`group flex w-full items-center rounded-lg border px-3 py-2 text-gray-500 hover:border hover:border-gray-300 hover:bg-white hover:text-gray-700 ${
                     activeButton === buttonText
-                        ? "border-slate-300 bg-white"
-                        : "border-slate-50 bg-slate-50"
+                        ? "border-gray-300 bg-white"
+                        : "border-gray-50 bg-gray-50"
                 }`}
                 onClick={() => handleComponentChange(buttonText)}
             >
                 <svg
-                    className={`h-4 w-5 transition duration-75 group-hover:text-slate-700 ${
+                    className={`h-4 w-5 transition duration-75 group-hover:text-gray-700 ${
                         activeButton === buttonText
-                            ? "text-slate-700"
-                            : "text-slate-500"
+                            ? "text-gray-700"
+                            : "text-gray-500"
                     }`}
                     xmlns="http://www.w3.org/2000/svg"
                     height="1em"
@@ -34,7 +34,7 @@ const DashboardButton = ({
                 </svg>
                 <span
                     className={`ml-3 ${
-                        activeButton === buttonText && "text-slate-700"
+                        activeButton === buttonText && "text-gray-700"
                     }`}
                 >
                     {text}

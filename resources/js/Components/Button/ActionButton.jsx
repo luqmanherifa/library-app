@@ -14,7 +14,7 @@ const ActionButton = ({
         <td className="flex px-4 py-4">
             {selectedShowAction === item.id ? (
                 <button
-                    className="w-7.5 mr-2 rounded-md bg-blue-800 px-2.5 py-2 text-xs text-slate-50 hover:bg-blue-600"
+                    className="w-7.5 mr-2 rounded-md bg-blue-800 px-2.5 py-2 text-xs text-gray-50 hover:bg-blue-600"
                     onClick={() => handleCancelShowAction()}
                 >
                     <svg
@@ -28,7 +28,7 @@ const ActionButton = ({
                 </button>
             ) : (
                 <button
-                    className="w-7.5 mr-2 rounded-md bg-blue-600 p-2 text-xs text-slate-50 hover:bg-blue-800"
+                    className="w-7.5 mr-2 rounded-md bg-blue-600 p-2 text-xs text-gray-50 hover:bg-blue-800"
                     onClick={() => handleShowAction(item.id)}
                 >
                     <svg
@@ -44,7 +44,7 @@ const ActionButton = ({
 
             {selectedUpdateAction === item.id ? (
                 <button
-                    className="w-7.5 mr-2 rounded-md bg-yellow-700 px-2.5 py-2 text-xs text-slate-50 hover:bg-yellow-400"
+                    className="w-7.5 mr-2 rounded-md bg-yellow-700 px-2.5 py-2 text-xs text-gray-50 hover:bg-yellow-400"
                     onClick={() => handleCancelUpdateAction()}
                 >
                     <svg
@@ -58,7 +58,7 @@ const ActionButton = ({
                 </button>
             ) : (
                 <button
-                    className="w-7.5 mr-2 rounded-md bg-yellow-400 p-2 text-xs text-slate-50 hover:bg-yellow-700"
+                    className="w-7.5 mr-2 rounded-md bg-yellow-400 p-2 text-xs text-gray-50 hover:bg-yellow-700"
                     onClick={() => handleUpdateAction(item.id)}
                 >
                     <svg
@@ -73,7 +73,7 @@ const ActionButton = ({
             )}
 
             <button
-                className="w-8 rounded-md bg-red-500 px-2.5 py-2 text-xs text-slate-50 hover:bg-red-700"
+                className="w-8 rounded-md bg-red-500 px-2.5 py-2 text-xs text-gray-50 hover:bg-red-700"
                 onClick={() => {
                     handleDeleteSubmit(item.id);
                 }}

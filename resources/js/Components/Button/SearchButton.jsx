@@ -9,14 +9,14 @@ const SearchButton = ({
         <form className="mb-5">
             <label
                 htmlFor="default-search"
-                className="sr-only mb-2 text-sm font-medium text-slate-900"
+                className="sr-only mb-2 text-sm font-medium text-gray-900"
             >
                 Search
             </label>
             <div className="relative">
                 <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-5">
                     <svg
-                        className="h-4 w-4 text-slate-500"
+                        className="h-4 w-4 text-gray-500"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -34,7 +34,7 @@ const SearchButton = ({
                 <input
                     type="search"
                     id="default-search"
-                    className="block w-full rounded-lg border border-slate-300 bg-slate-50 p-4 pl-12 text-sm text-slate-900 placeholder-slate-400 focus:bg-slate-50"
+                    className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-4 pl-12 text-sm text-gray-900 placeholder-gray-400 focus:bg-gray-50"
                     placeholder={`${searchPlaceholder}`}
                     value={searchQuery}
                     onChange={handleSearchInputChange}

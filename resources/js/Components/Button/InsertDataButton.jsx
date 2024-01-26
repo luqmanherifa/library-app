@@ -6,7 +6,7 @@ const InsertDataButton = ({ handleInsertAction, text }) => {
             onClick={() => {
                 handleInsertAction();
             }}
-            className="rounded-lg bg-green-500 px-4 py-2 text-center text-base font-medium text-slate-50 hover:bg-green-700"
+            className="rounded-lg bg-green-500 px-4 py-2 text-center text-base font-medium text-gray-50 hover:bg-green-700"
         >
             <div className="flex items-center gap-2 text-base">
                 <span className="hidden lg:block">Insert {text}</span>

@@ -3,10 +3,10 @@ import React from "react";
 const ModalHeaderButton = ({ text, onClick }) => {
     return (
         <div className="flex items-start justify-between rounded-t border-b px-6 pb-4 pt-5">
-            <h3 className="text-xl font-semibold text-slate-900">{text}</h3>
+            <h3 className="text-xl font-semibold text-gray-900">{text}</h3>
             <button
                 type="button"
-                className="ml-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-slate-400 hover:bg-slate-100 hover:text-slate-900"
+                className="ml-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-100 hover:text-gray-900"
                 data-modal-hide="defaultModal"
                 onClick={onClick}
             >

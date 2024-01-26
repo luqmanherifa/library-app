@@ -2,7 +2,7 @@ import React from "react";
 
 const TotalData = ({ total, text }) => {
     return (
-        <div className="flex items-center gap-1.5 rounded-lg border border-slate-300 px-4 py-2 text-center text-base font-semibold text-slate-500">
+        <div className="flex items-center gap-1.5 rounded-lg border border-gray-300 px-4 py-2 text-center text-base font-semibold text-gray-500">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"

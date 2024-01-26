@@ -37,19 +37,19 @@
 ```
 npm install
 ```
-  - Laravel Migrate
+  - Laravel Migrate (Method 1)
 ```
 php artisan migrate
 ```
-  - Laravel Seeder
+  - Laravel Seeder (Method 1)
 ```
 php artisan db:seed --class=BorrowSeeder
 ```
-  - Import Database (Optional)
+  - Import Database (Method 2)
 ```
 import file library.sql
 ```
-  - User Admin (Optional)
+  - User Admin (Method 2)
 ```
 email: admin@admin.com
 password: A12345678

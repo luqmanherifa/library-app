@@ -93,7 +93,7 @@ const TableBorrow = ({
                                 colSpan="11"
                                 className="py-4 pl-10 font-medium text-red-500 lg:pl-0 lg:text-center"
                             >
-                                Data tidak tersedia.
+                                Data not found.
                             </td>
                         </tr>
                     )}

@@ -45,6 +45,15 @@ php artisan migrate
 ```
 php artisan db:seed --class=BorrowSeeder
 ```
+  - Import Database (Optional)
+```
+import file library.sql
+```
+  - User Admin (Optional)
+```
+email: admin@admin.com
+password: A12345678
+```
   - Run Laravel
 ```
 php artisan serve

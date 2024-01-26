@@ -127,7 +127,7 @@ export default function Dashboard({ auth }) {
                 className="fixed left-0 top-0 z-40 h-screen w-56 -translate-x-full border-r border-gray-300 pt-[4rem] transition-transform sm:translate-x-0 block"
                 aria-label="Sidebar"
             >
-                <div className="custom-scrollbar h-full overflow-y-hidden bg-gray-50 px-5 pb-20 hover:overflow-y-auto">
+                <div className="custom-scrollbar h-full overflow-y-hidden bg-gray-100 px-5 pb-20 hover:overflow-y-auto">
                     <ul className="mt-6 space-y-0.5 font-medium">
                         <DashboardButton
                             activeButton={activeButton}

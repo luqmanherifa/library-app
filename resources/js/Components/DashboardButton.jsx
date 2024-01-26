@@ -11,10 +11,10 @@ const DashboardButton = ({
         <li>
             <button
                 type="button"
-                className={`group flex w-full items-center rounded-lg border px-3 py-2 text-gray-500 hover:border hover:border-gray-300 hover:bg-white hover:text-gray-700 ${
+                className={`group flex w-full items-center rounded-lg border px-3 py-2 text-gray-500 hover:bg-gray-300 hover:text-gray-700 ${
                     activeButton === buttonText
-                        ? "border-gray-300 bg-white"
-                        : "border-gray-50 bg-gray-50"
+                        ? "border-gray-100 bg-gray-300"
+                        : "border-gray-100 bg-gray-100"
                 }`}
                 onClick={() => handleComponentChange(buttonText)}
             >

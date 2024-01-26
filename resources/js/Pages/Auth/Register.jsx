@@ -71,7 +71,11 @@ export default function Register() {
                         required
                     />
 
-                    <InputError message={errors.email} className="mt-2" />
+                    <small className="text-gray-500 mt-1 block">
+                        Please enter a valid email address (e.g.,
+                        luqman@herifa.com).
+                    </small>
+                    <InputError message={errors.email} className="mt-0" />
                 </div>
 
                 <div className="mt-4">
@@ -88,7 +92,11 @@ export default function Register() {
                         required
                     />
 
-                    <InputError message={errors.password} className="mt-2" />
+                    <small className="text-gray-500 mt-1 block">
+                        Password at least 8 characters, 1 capital letter,
+                        alphanumeric only.
+                    </small>
+                    <InputError message={errors.password} className="mt-0" />
                 </div>
 
                 <div className="mt-4">
